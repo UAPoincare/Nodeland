@@ -1,0 +1,90 @@
+.table
+	max-width: 850px
+	margin: 0 auto 25px
+	+r(767)
+		display: none
+	&_mob
+		text-align: justify 
+		display: none
+		+r(767)
+			display: block
+			tr
+				&:last-child
+					td
+						background: none
+						color: #041439
+			td
+				font-size: 13px
+				&:nth-child(2)
+					width: 40%!important
+				&:nth-child(3)
+					width: 30%!important
+			th
+				width: 30%
+				font-size: 14px
+				background: none
+				color: #041439
+	tr
+		td, th
+			padding: 5px
+			vertical-align: middle
+			&:first-child
+				width: 80px
+				+mb
+			&:nth-child(2)
+				width: 120px
+			&:nth-child(3)
+				width: 50%			
+			&:nth-child(4)
+				width: 110px
+		td
+			&:nth-child(3)
+				font-size: 14px
+	tr:last-child
+		td
+			background: #255089
+			color: #fff
+	th
+		padding: 5px
+		background: #255089
+		color: #fff
+		+mb
+		text-align: left
+
+.table-mod
+	max-width: 850px
+	margin: 0 auto 40px
+	th, td
+		color: #041439
+	th
+		text-align: left
+	td
+		font-size: 15px
+
+	tr
+		th, td
+			padding: 5px 10px
+			vertical-align: middle
+			&:first-child
+				text-align: center
+		&:nth-child(even)
+			th, td
+				background: #255089
+				color: #fff
+	+r(767)
+		display: none
+	&_mob
+		display: none
+		tr
+			&:nth-child(even)
+				th, td
+					background: none
+					color: #041439
+			td
+				&:nth-child(even)
+					background: #255089
+					color: #fff
+			th
+				text-align: left!important
+		+r(767)
+			display: block 

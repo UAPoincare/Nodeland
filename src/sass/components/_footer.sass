@@ -1,0 +1,61 @@
+.footer
+	position: relative
+	min-height: 70px
+	height: 1px
+	z-index: 2 
+	background: #0d2139
+	+r(700)
+		height: auto
+	&__inner
+		display: flex
+		justify-content: space-between
+		align-items: center
+		height: 100%
+		flex-flow: row nowrap
+		+r(700)
+			flex-flow: column-reverse nowrap
+			justify-content: center
+
+	+r(1023)
+		.logo
+			display: none
+	&__bottom
+		+clr
+		padding: 26px 0 20px
+		background: darken(#0c2139, 5)
+	.row
+		height: 100%
+
+.lang
+	&_footer
+		.lang__list
+			position: absolute
+			bottom: 100%
+			right: 0
+			margin-top: 0
+
+.copy
+	color: #fff
+	+r(700)
+		padding: 0 10px 15px
+		text-align: center
+		font-size: 13px
+
+.socials,
+.copy
+	padding: 0 10px
+
+.socials
+	+r(767)
+		padding: 15px 10px 10px
+	+r(600)
+		padding: 15px 0 10px
+
+.social
+	display: inline-block
+	vertical-align: top
+	margin-left: 15px
+	&__link
+		display: block
+		color: #fff
+		font-size: 22px
