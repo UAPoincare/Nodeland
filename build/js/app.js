@@ -146,7 +146,7 @@ $("#product").mouseenter(function(){
         }
     }
 
-	$(".js-timer").countdown('2017/11/11 23:00:00', function(event) {
+	$(".js-timer").countdown('2017/11/15 00:00:00', function(event) {
 		$('.js-timer-days').text(event.strftime('%D'));
 		$('.js-timer-hour').text(event.strftime('%H'));
 		$('.js-timer-min').text(event.strftime('%M'));
